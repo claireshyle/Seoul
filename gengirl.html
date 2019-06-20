@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>South Korea</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">South Korea</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">DESCRIPTION</a></li>
+        <li><a href="#tour">FOOD</a></li>
+        <li><a href="#contact">VIDEO</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">THINGS TO DO 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">WEATHER</a></li>
+            <li><a href="#">TOURIST ATTRACTION</a></li> 
+            <li><a href="#">FUN FACTS</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        <img src="Seoul.jpg" height="700">
+        <div class="carousel-caption">
+          <h3>Seoul</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="busan3.jpg" alt="Busan" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Busan</h3>
+        </div>      
+      </div>
+      <div class="item">
+        <img src="daegu3.jpg" alt="Daegu" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Daegu</h3>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="ilsan7.jpg" alt="Ilsan" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Ilsan</h3>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>South Korea</h3>
+  <p><em>a description</em></p>
+  <p>The Republic of Korea, is a country in East Asia, constituting the southern part of the Korean Peninsula and sharing a land border with North Korea. The name Korea is derived from Goguryeo which was one of the great powers in East Asia during its time, ruling most of the Korean Peninsula, Manchuria, parts of the Russian Far East and Inner Mongolia under Gwanggaeto the Great. Its capital, Seoul, is a major global city and half of South Korea's 51 million people live in the Seoul Capital Area, the fourth largest metropolitan economy in the world. The South Korean government's structure is determined by the Constitution of the Republic of Korea. This document has been revised several times since its first promulgation in 1948 at independence. However, it has retained many broad characteristics and with the exception of the short-lived Second Republic of South Korea, the country has always had a presidential system with an independent chief executive. The first direct election was also held in 1948. Although South Korea experienced a series of military dictatorships from the 1960s up until the 1980s, it has since developed into a successful liberal democracy. Today, the CIA World Factbook describes South Korea's democracy as a "fully functioning modern democracy".</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Seoul</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="seoul2.jpg" class="img-circle person" alt="seoul" width="200">
+      </a>
+      <div id="demo4" class="collapse">
+          <p>Seoul is the business and cultural hub of South Korea, where skyscrapers tower over Buddhist temples. Take it all in from the N Seoul Tower, built atop a peak in Namsan Park. The teahouses and shops of Insadong give you a taste of Korean flavor, which you can further experience with a visit to the grounds and museums of Gyeongbokgung.</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Busan</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+        <img src="busan2.jpg" class="img-circle person" alt="busan" width="200">
+      </a>
+      <div id="demo5" class="collapse">
+        <p>Home to majestic mountains, glistening beaches, steaming hot springs and fantastic seafood, South Korea’s second-largest city is a rollicking port town with tonnes to offer. From casual tent bars and chic designer cafes to fish markets teeming with every species imaginable, Busan (부산) has something for all tastes. Rugged mountain ranges slice through the urban landscape, and events such as the Busan International Film Festival underscore the city’s desire to be a global meeting place.</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Daegu</strong></p><br>
+      <a href="#demo6" data-toggle="collapse">
+        <img src="daegu2.jpg" class="img-circle person" alt="daegu" width="255" height="255">
+      </a>
+      <div id="demo6" class="collapse">
+        <p>Being the center of Gyeongsang province, Daegu is rich in cultural heritage sites, such as Donghwasa Temple, Bullo-dong Ancient Tomb Park and Dalseong Park. Blessed with magnificent mountains and rivers, it is a popular tourist destination. Daegu is a city of various cultural events and stage performances organized throughout the year : Colorful Daegu Festival (May), Chicken and Beer Festival (July), Daegu International Musical Festival (June-July), Daegu International Opera Festival (October-November), Daegu Folk Festival (August) and other.</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <p class="text-center"><strong>Ilsan</strong></p><br>
+      <a href="#demo7" data-toggle="collapse">
+        <img src="ilsan2.jpg" class="img-circle person" alt="ilsan" width="255" height="255">
+      </a>
+      <div id="demo7" class="collapse">
+        <p>Ilsan is also home to Lake Park (호수공원). The lake covers 72.9 acres (295,000 m2) and is the largest artificial lake in Asia. There are several recreational facilities such as promenade road, bicycle path, inline skating, walking, and a jogging trail that encircles the lake. Lake Park also features a large variety of wild flowers and plants, such as cactus arboretum and botanical gardens. It is the venue for the annual Goyang World Flower Festival and the filming location of Seoul Broadcasting System's drama Star's Lover.</p>
+      </div>
+    </div>      
+  </div>    
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" style="text-align: center" class="container">
+
+<h1>SEOUL: THE CAPITAL CITY</h1>
+  <div class="row">
+      <iframe width="1000" height="700" src="https://www.youtube.com/embed/RtgJ5XpkBYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+    
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">FOOD</h3>
+    <ul class="list-group">
+      <li class="list-group-item">Ramyun
+      <li class="list-group-item">Bibimbap
+      <li class="list-group-item">Tteokbokki
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Ramyun.png" alt="Ramyun" width="400" height="300">
+          <p><strong>Ramyun</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="bibimbap2.png" alt="Bibimbap" width="400" height="300">
+          <p><strong>Bibimbap</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="tteokbokki3.png" alt="Treokbokki" width="400" height="300">
+          <p><strong>Tteokbokki</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <span class="glyphicon glyphicon-lock"></span>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span></label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span></label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h2 class="text-center">'𝓣𝓸𝓾𝓻𝓲𝓼𝓽 𝓐𝓽𝓽𝓻𝓪𝓬𝓽𝓲𝓸𝓷𝓼'</h2>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Seoul</a></li>
+    <li><a data-toggle="tab" href="#menu1">Busan</a></li>
+    <li><a data-toggle="tab" href="#menu2">Daegu</a></li>
+    <li><a data-toggle="tab" href="#menu3">Ilsan</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>𝓢𝓮𝓸𝓾𝓵</h3>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>𝓑𝓾𝓼𝓪𝓷</h3>
+    </div>
+      <div id="menu2" class="tab-pane fade">
+      <h3>𝓓𝓪𝓮𝓰𝓾</h3>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>𝓘𝓵𝓼𝓪𝓷</h3>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
